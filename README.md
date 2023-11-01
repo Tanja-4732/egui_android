@@ -30,7 +30,7 @@ assuming you have the Android NDK and SDK installed (see below).
 
 The following guide is based on https://github.com/tauri-apps/wry/blob/dev/MOBILE.md, as seen on 2023-11-01 05:29:29.
 
-1. Install the Android NDK and SDK
+1. Set env vars
     ```zsh
     sudo pacman -S jdk-openjdk
     export $NDK_HOME=$HOME/Android/Sdk/ndk/25.0.8775105
