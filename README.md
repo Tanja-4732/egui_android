@@ -46,7 +46,7 @@ The following guide is based on https://github.com/tauri-apps/wry/blob/dev/MOBIL
     - Android SDK Platform-Tools
     - NDK (Side by side) 25.0.8775105
     - Android SDK Build-Tools 33.0
-    - Android SDK Command-line Tools
+    - Android SDK Command-line Tools  
     (hit the details button to see all version numbers)
 4. Install the rust toolchain
     ```zsh
