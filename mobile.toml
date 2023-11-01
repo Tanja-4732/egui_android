@@ -1,0 +1,5 @@
+[app]
+name = "egui-android"
+stylized-name = "Egui Android"
+domain = "apps.tanja.pw"
+template-pack = "egui"
