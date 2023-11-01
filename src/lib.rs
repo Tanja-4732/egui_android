@@ -77,6 +77,10 @@ fn _main(event_loop: EventLoop<Event>) {
     let mut window: Option<winit::window::Window> = None;
     // let mut egui_demo_windows = egui_demo_lib::DemoWindows::default();
 
+    // Our application state:
+    let mut name = "Tanja".to_owned();
+    let mut age = 23;
+
     event_loop.run(move |event, event_loop, control_flow| match event {
         Resumed => match window {
             None => {
@@ -98,7 +102,17 @@ fn _main(event_loop: EventLoop<Event>) {
                     // egui_demo_windows.ui(ctx);
 
                     egui::CentralPanel::default().show(ctx, |ui| {
-                        ui.heading("Hello World!");
+                        ui.heading("My egui Application");
+                        ui.horizontal(|ui| {
+                            let name_label = ui.label("Your name: ");
+                            ui.text_edit_singleline(&mut name)
+                                .labelled_by(name_label.id);
+                        });
+                        ui.add(egui::Slider::new(&mut age, 0..=120).text("age"));
+                        if ui.button("Click each year").clicked() {
+                            age += 1;
+                        }
+                        ui.label(format!("Hello '{name}', age {age}"));
                     });
                 });
                 state.handle_platform_output(window, &ctx, full_output.platform_output);
