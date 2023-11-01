@@ -3,6 +3,12 @@
 FYI this is just an experiment, based on the work of others;  
 I didn't make the vast majority of this code, but the section on [prerequisites](#prerequisites) may be very useful to you.
 
+See
+
+- <https://github.com/tauri-apps/cargo-mobile2>
+- <https://github.com/gfx-rs/wgpu#supported-platforms>
+- <https://github.com/tauri-apps/wry/blob/dev/MOBILE.md>
+
 ---
 
 This is an example based on [agdk-egui example](https://github.com/rust-mobile/rust-android-examples), using `egui`, `winit` and `wgpu` to run [egui_demo_app](https://github.com/emilk/egui/tree/master/egui_demo_app).
